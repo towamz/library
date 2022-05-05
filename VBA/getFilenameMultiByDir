@@ -1,4 +1,4 @@
-Private Function getFilenameByDir(argPattern As String) As Variant
+Private Function getFilenameMultiByDir(argPattern As String) As Variant
     Dim aryFileName() As String
     Dim FileName As String
     Dim cnt As Integer
