@@ -1,0 +1,13 @@
+Public Function readFileMulti(byval argPromptString As String, byref argFilename as variant) As Boolean
+    '----------ファイルを開く(複数ファイル選択)----------
+    varFileName = Application.GetOpenFilename(FileFilter:="Excelファイル,*.xlsx", _
+                                        Title:=argPromptString, MultiSelect:=True)
+    
+    'ファイル名が取得できない時はFalse(配列でない)が帰ってくる
+    If IsArray(varFileName) Then
+        readFileMulti = True
+    Else
+        readFileMulti = False
+    End If
+
+End Function
