@@ -1,4 +1,4 @@
-Private Function getFileName(argPattern As String) As Variant
+Private Function getFilenameByDir(argPattern As String) As Variant
     Dim aryFileName() As String
     Dim FileName As String
     Dim cnt As Integer
@@ -17,6 +17,6 @@ Private Function getFileName(argPattern As String) As Variant
         cnt = cnt + 1
     Loop
 
-    getFileName = aryFileName
+    getFilenameByDir = aryFileName
 
 End Function
